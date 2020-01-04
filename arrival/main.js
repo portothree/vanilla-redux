@@ -5,7 +5,7 @@ function arrivalReducer(state = {}, action) {
 	switch (action.type) {
 		case "CHANGE_ARRIVAL":
 			// There's no need to actually copy the state here since
-			// we are only dealing with one entrie ('arrival') in the object.
+			// we are only dealing with one entry ('arrival') in the object.
 			return { ...state, arrival: action.arrival };
 		default:
 			return state;
